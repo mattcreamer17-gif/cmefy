@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A read on where AI fits in CMEfy's stack. And where a rule or a template holds the line more safely.</title>
+<meta name="description" content="Your AI Topic Generation feature pulls reflection prompts out of PDFs and articles, and that content ends up inside an ACCME-accredited flow. A specific hypothesis about where that pipeline breaks the first time a serious enterprise buyer runs their compliance checklist against it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="https://cmefy.com/" target="_blank" rel="noopener">
+      <img src="logo.png" alt="CMEfy" class="brand-logo">
+    </a>
+    <span class="topbar-tag">#CliniciansFirst</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Prepared for CMEfy. eMerge Americas 2026. Silver booth.</span>
+      <h1 class="hero-title">
+        A read on where AI fits in CMEfy's stack.
+        <span class="hero-title-soft">And where a rule or a template holds the line more safely.</span>
+      </h1>
+      <p class="hero-lede">A short orchestration review for the team shipping reflection nudges into ACCME-accredited flows.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt Creamer</a>
+        <span class="hero-cta-meta">Eduba CRO. The person at the Silver booth.</span>
+      </div>
+    </div>
+    <div class="hero-gradient" aria-hidden="true"></div>
+  </section>
+
+  <section class="section section-stats">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-number">60<span class="stat-pct">%</span></span>
+          <span class="stat-label">Traditional code and database work. Storing reflections, awarding credit, syncing to Adaptrack, running the partner API.</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">30<span class="stat-pct">%</span></span>
+          <span class="stat-label">Rule-based logic. ACCME Standards checks, promotional-content filters, credit-issuance rules, BAA-scoped data handling.</span>
+        </div>
+        <div class="stat-card stat-card-accent">
+          <span class="stat-number">10<span class="stat-pct">%</span></span>
+          <span class="stat-label">Genuine AI work. Summarizing a PDF into a reflection prompt. Surfacing patterns in learner behavior. Drafting something a clinician then edits.</span>
+        </div>
+      </div>
+      <p class="stats-caption">A working estimate for most teams building AI into regulated healthcare content. The failure mode is putting an LLM where a Postgres query or a deterministic rule would do the job faster, cheaper, and with a compliance story that survives procurement.</p>
+    </div>
+  </section>
+
+  <section class="section section-body">
+    <div class="container body-grid">
+      <div class="body-main">
+        <h2 class="section-title">The frame</h2>
+        <p>CMEfy puts clinicians first and builds in the flow of their day-to-day. You ship 30-second reflection nudges that attach to grand rounds, podcasts, WhatsApp threads, Zoom calls. You run AI Topic Generation against PDFs and articles. The accredited credit lands in Adaptrack. The partner API is the lever. One hundred thousand learners, a million reflective credits, 50+ organizations. A small team against a large surface.</p>
+
+        <p>Here is how we would think about your stack. Most teams building AI into regulated healthcare content treat every problem as an AI problem. That is where the budget goes sideways. Around 60 percent of the work inside a product like CMEfy is traditional code and database work. Around 30 percent is rule-based logic. Only around 10 percent is genuine AI work where a model earns its seat. We would come in, map the CMEfy platform against that 60/30/10 view, and hand back a specific plan for which pieces of each workflow belong on which layer.</p>
+
+        <h2 class="section-title">A recent engagement of the same shape</h2>
+        <p>We ran a scoped sprint with Feeld earlier in 2025. Feeld is a product company, CTO-led, figuring out where AI fits inside an existing stack without rebuilding it. We ran a workshop, built an Organizational Context Architecture for their team, and handed over a Strategic Operations Framework that let them move forward on AI features with a shared internal spec. The shape of that engagement is close to what CMEfy would get: a short, high-signal piece of work that leaves the team with a clear orchestration map before the next big platform-embed deal goes live.</p>
+
+        <h2 class="section-title">The directly relevant paper</h2>
+        <p>Jake Van Clief co-authored the Ethics Engine, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs. It is the piece of work most relevant to the AI Topic Generation quality-control question. Paper: <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a>. Repo: <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>.</p>
+
+        <h2 class="section-title">A note on partners</h2>
+        <p>Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. If the first engagement expands into a full bespoke build of a content-validation pipeline with production ML infrastructure, NLP is the natural downstream partner. Matt holds the relationship at the top.</p>
+      </div>
+
+      <aside class="body-aside">
+        <div class="aside-card">
+          <h3 class="aside-title">Three questions we would ask at the booth</h3>
+          <ol class="aside-list">
+            <li>When AI Topic Generation output rolls into a new enterprise deployment, who reviews the generated topics against ACCME Standards for Integrity and Independence, and how long does that review take per batch?</li>
+            <li>Across CMEfy, Learner+, ThinqBits, and Vinea, how much of the backend is shared versus forked, and where does the sharing break down when one team ships fast?</li>
+            <li>When a health system asks what outcome your platform moved (retention, knowledge, behavior), what is the strongest sentence you can give them today without overstating it?</li>
+          </ol>
+        </div>
+
+        <div class="aside-card aside-card-soft">
+          <h3 class="aside-title">Shape of a first engagement</h3>
+          <ul class="aside-plain">
+            <li>Scoped orchestration and governance audit</li>
+            <li>Workshop with Niraj, Brian, and core product</li>
+            <li>Organizational Context Architecture for the SCAD Ventures stable</li>
+            <li>Strategic Operations Framework, written to survive an ACCME review</li>
+            <li>Playbook for the API partner program compliance posture</li>
+          </ul>
+        </div>
+
+        <div class="aside-card aside-card-quiet">
+          <h3 class="aside-title">On the writer</h3>
+          <p>Jake Van Clief. MSc Future Governance, University of Edinburgh. Published in ACM TiiS and arXiv. 1,500+ people trained across enterprise engagements since May 2025, including KPMG UK (one of the Big Four) and Correlation One for Pacific Life and Colgate-Palmolive. Marine Corps veteran, eight years in cryptographic systems and F-35 avionics. Jake also built an online community to 22,000 members in 5 weeks.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2 class="cta-title">30 minutes with Matt Creamer.</h2>
+        <p class="cta-sub">Bring one workflow you wish ran faster. Ideally the one that involves AI-generated content hitting a compliance step.</p>
+      </div>
+      <a class="btn btn-primary btn-lg" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Open the calendar</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-line">Prepared by Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+    <p class="footer-small">Written for the CMEfy team ahead of eMerge Americas 2026. Not a public marketing page. Content references <a href="https://cmefy.com/" target="_blank" rel="noopener">cmefy.com</a> and <a href="https://about.cmefy.com/" target="_blank" rel="noopener">about.cmefy.com</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
